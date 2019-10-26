@@ -7,3 +7,5 @@ db.sqlite3
 .DS_Store
 private_dev.py
 mysite/media/original_images
+mysite/static/package.json
+mysite/static/package-lock.json
