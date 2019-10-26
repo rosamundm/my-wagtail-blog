@@ -1,0 +1,39 @@
+<!doctype html>
+
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% load static %}
+
+<head>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="{% static 'css/blog-post.css' %}">
+  <!--meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rosamund's blog</title>
+</head>
+
+<style>
+
+  body {
+       font-family: 'Be Vietnam', sans-serif;
+       font-size: 50px;
+     }
+
+  </style>
+
+  
+
+{% block content %}
+    <h1{{ page.title }}</h1>
+    <p class="meta">{{ page.date }}</p>
+
+    <div class="intro">{{ page.intro }}</div>
+
+    {{ page.body|richtext }}
+
+{% endblock %}
