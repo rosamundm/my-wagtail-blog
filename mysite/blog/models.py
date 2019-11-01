@@ -12,6 +12,15 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
 
+
+class TextPage(Page):
+    body = RichTextField(blank=True)
+
+    content_panels = Page.content_panels + [
+        FieldPanel('body', classname="full"),
+    ]
+
+
 class BlogIndexPage(Page):
     intro = RichTextField(blank=True)
 
@@ -34,7 +43,6 @@ class BlogPageTag(TaggedItemBase):
 
 class BlogPage(Page):
     date = models.DateField("Post date")
-    intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
     categories = ParentalManyToManyField('blog.BlogCategory', blank=True)
@@ -48,7 +56,6 @@ class BlogPage(Page):
             return None
 
     search_fields = Page.search_fields + [
-        index.SearchField('intro'),
         index.SearchField('body'),
     ]
 
@@ -58,7 +65,6 @@ class BlogPage(Page):
             FieldPanel('tags'),
             FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
         ], heading="Blog information"),
-        FieldPanel('intro'),
         FieldPanel('body'),
         InlinePanel('gallery_images', label="Gallery images"),
     ]

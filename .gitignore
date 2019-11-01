@@ -6,6 +6,4 @@ db.sqlite3
 /static
 .DS_Store
 private_dev.py
-mysite/media/original_images
-mysite/static/package.json
-mysite/static/package-lock.json
+Dockerfile
