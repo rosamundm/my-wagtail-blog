@@ -87,6 +87,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+ALLOWED_HOSTS = '['rosamund.pythonanywhere.com']'
+
+
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
