@@ -26,14 +26,38 @@
         {% endblock %}
     </head>
 
+    <style>
+
+
+         a:link {
+           color: #5eb69d;
+         }
+
+         a:visited {
+           color: #ef7479;
+         }
+
+         a:hover {
+           color: #78C2AD;
+           text-decoration: none;
+         }
+
+         ::selection {
+           background-color: #78C2AD;
+           color: #FFFFFF;
+         }
+
+       </style>
+
+
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Rosamund</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a class="navbar-brand" href="#">Rosamund</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav mr-auto">
@@ -59,15 +83,10 @@
 <br>
 <br>
 
-<div class="jumbotron">
-  <h1 class="display-3">Welcome</h1>
+<div class="container">
   <p class="lead">{% block content %}{% endblock %}</p>
   <hr class="my-4">
-  <p>Here is my first Wagtail site. How exciting.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Call to action button</a>
-  </p>
-</div>
+  <p>Insert social media vector icons.</p>
 
 
 
@@ -79,3 +98,5 @@
         {% endblock %}
     </body>
 </html>
+
+<footer><small>© Rosamund Mather 2019</font></small></footer>
