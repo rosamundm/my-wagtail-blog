@@ -20,7 +20,6 @@ class TextPage(Page):
         FieldPanel('body', classname="full"),
     ]
 
-
 class BlogIndexPage(Page):
     intro = RichTextField(blank=True)
 
