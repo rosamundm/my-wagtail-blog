@@ -87,7 +87,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-ALLOWED_HOSTS = 'rosamund.pythonanywhere.com'
+ALLOWED_HOSTS = ['127.0.0.1', 'rosamund.pythonanywhere.com']
 
 
 
