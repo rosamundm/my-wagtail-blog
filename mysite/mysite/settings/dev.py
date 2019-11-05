@@ -23,5 +23,5 @@ except ImportError:
 import os
 
 try:
-    from private_settings import *
-except ImportError: print ("Error: make a local version of private_settings from the template")
+    from private_dev import *
+except ImportError: print ("Error: make a local version of private_dev from the template")
