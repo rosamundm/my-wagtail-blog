@@ -1,3 +1,0 @@
-Django>=2.2,<2.3
-Wagtail>=2.6,<2.7
-Gunicorn==19.9.0

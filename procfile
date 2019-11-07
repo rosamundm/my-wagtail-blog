@@ -1,2 +1,0 @@
-web: gunicorn wagtail.wsgi --log-file -
-worker: rake jobs:work

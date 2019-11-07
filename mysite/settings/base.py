@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'wagtail.admin',
     'wagtail.core',
     'wagtail.contrib.styleguide',
-    'wagtail.settings',
 
     'modelcluster',
     'taggit',
@@ -86,9 +85,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mysite.wsgi.application'
+#WSGI_APPLICATION = 'wagtail.wsgi.application'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'ancient-escarpment-75805.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'rosamund.pythonanywhere.com']
 
 
 

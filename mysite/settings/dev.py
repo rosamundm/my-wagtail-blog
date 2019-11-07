@@ -9,7 +9,7 @@ DEBUG = True
 SECRET_KEY = 'removed'
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ['127.0.0.1', 'ancient-escarpment-75805.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'rosamund.pythonanywhere.com']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
