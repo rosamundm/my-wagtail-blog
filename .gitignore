@@ -8,6 +8,4 @@ db.sqlite3
 private_dev.py
 Dockerfile
 /media/
-sshkey
-sshkey.pub
-sshkey.rtf
+.env
