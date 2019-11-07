@@ -1,5 +1,2 @@
-web: gunicorn wagtail.mysite.wsgi
-
+web: gunicorn wagtail.wsgi --log-file -
 worker: rake jobs:work
-
-Python-3.7.4
