@@ -11,7 +11,7 @@ def main (repo_url, domain, python_version, nuke):
   if domain == 'rosamund.pythonanywhere.com':
     username = getpass.getuser().lower()
     pa_domain = os.environ.get('PYTHONANYWHERE_DOMAIN', 'pythonanywhere.com')
-    domain = '{username}.{pa_domain}'.format(username=username, pa_domain=pa_domain)
+    domain = 'rosamund.pythonanywhere.com'.format(username=username, pa_domain=pa_domain)
 
 project = DjangoProject(domain, python_version)
 project.sanity_checks(nuke=nuke)
@@ -31,4 +31,4 @@ project.start_bash()
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)
-    main.(arguments['rosamundm'], arguments['--domain']), arguments['--python'], nuke=arguments.get('--nuke'))
+    main(arguments['my-wagtail-blog'], arguments['--domain'], arguments['--python'], nuke=arguments.get('--nuke'))
