@@ -1,3 +1,3 @@
-web: gunicorn wagtail.wsgi --log-file -
+web: gunicorn ancient-escarpment-75805.wsgi --log-file -
 
 Python-3.7.4
