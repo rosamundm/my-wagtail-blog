@@ -1,3 +1,5 @@
-web: gunicorn ancient-escarpment-75805.wsgi --log-file -
+web: gunicorn wagtail.mysite.wsgi
+
+worker: rake jobs:work
 
 Python-3.7.4
