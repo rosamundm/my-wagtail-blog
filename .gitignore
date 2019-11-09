@@ -6,7 +6,5 @@ db.sqlite3
 /static
 .DS_Store
 private_dev.py
-requirements_divio.txt
 Dockerfile
 /media/
-.env
