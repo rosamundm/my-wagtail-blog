@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/
 #local wsgi config
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "my-wagtail-blog.mysite.settings.dev")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "my-wagtail-blog.mysite.settings.heroku_settings")
 
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise

@@ -1,0 +1,17 @@
+2019-11-14 16:41:05.829 CET [12218] LOG:  listening on IPv6 address "::1", port 5432
+2019-11-14 16:41:05.829 CET [12218] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-11-14 16:41:05.946 CET [12218] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-11-14 16:41:06.657 CET [12220] LOG:  database system was shut down at 2019-11-14 16:10:21 CET
+2019-11-14 16:41:07.137 CET [12218] LOG:  database system is ready to accept connections
+2019-11-14 19:08:50.070 CET [13577] ERROR:  role "rosamund" does not exist
+2019-11-14 19:08:50.070 CET [13577] STATEMENT:  ALTER USER rosamund PASSWORD 'md5e11ab519d0dee7796c4acac089fdd974'
+2019-11-14 19:26:44.841 CET [13686] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-11-14 19:55:10.647 CET [13748] FATAL:  role "rosamund" does not exist
+2019-11-14 19:59:20.024 CET [13757] FATAL:  database "Rosamund" does not exist
+2019-11-14 21:09:15.647 CET [14052] FATAL:  database "Rosamund" does not exist
+2019-11-14 21:10:13.088 CET [14056] FATAL:  role "root" does not exist
+2019-11-16 14:40:43.538 CET [12224] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-11-17 21:56:56.114 CET [12218] LOG:  received smart shutdown request
+2019-11-17 21:56:56.244 CET [12218] LOG:  background worker "logical replication launcher" (PID 12226) exited with exit code 1
+2019-11-17 21:56:56.244 CET [12221] LOG:  shutting down
+2019-11-17 21:56:56.500 CET [12218] LOG:  database system is shut down

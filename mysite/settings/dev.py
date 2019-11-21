@@ -11,7 +11,7 @@ DEBUG = True
 
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ['127.0.0.1', 'rosamund.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.heroku.com']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

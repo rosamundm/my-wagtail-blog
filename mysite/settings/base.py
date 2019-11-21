@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'wagtail.wsgi.application'
+WSGI_APPLICATION = 'my-wagtail-blog.wsgi.application' #formerly wagtail.wsgi
 
 ALLOWED_HOSTS = ['127.0.0.1', 'rosamund.pythonanywhere.com']
 
